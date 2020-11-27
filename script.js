@@ -52,8 +52,11 @@ async function predict() {
     const probability = prediction[i].probability.toFixed(2) * 100;
 
     const data = {
-      Me: 'Me에 대한 설명을 적어볼까요?',
-      Delete: 'Delete에 대한 설명을 적어볼까요?',
+      None: '아무도 없군요...',
+      김고은: '김고은을 닮으셨군요!',
+      하정우: '하정우를 닮으셨군요!',
+      육성재: '육성재를 닮으셨군요!',
+      이종석: '이종석을 닮으셨군요!'
     };
 
     if (probability >= 75) {
